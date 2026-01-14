@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rio Studio Invitation</title>
+    </head>
+    <body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4;">
+        <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <!-- Header -->
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px 20px; text-align: center;">
+                <h1 style="color: #ffffff; margin: 0; font-size: 28px; font-weight: 300;">Rio Studio</h1>
+                <p style="color: #e8f0fe; margin: 10px 0 0 0; font-size: 16px;">Data Annotation Platform</p>
+            </div>
+            
+            <!-- Main Content -->
+            <div style="padding: 40px 30px;">
+                <h2 style="color: #2c3e50; margin: 0 0 20px 0; font-size: 24px; font-weight: 400;">Welcome to the team!</h2>
+                
+                <p style="margin: 0 0 20px 0; font-size: 16px; color: #555;">Hello!</p>
+                
+                <p style="margin: 0 0 25px 0; font-size: 16px; color: #555;">
+                    You have been invited to join the organization <strong style="color: #2c3e50;">"{active_org.title}"</strong>
+                    on Rio Studio as a <strong style="color: #667eea;">{role.title()}</strong>.
+                </p>
+                
+                <div style="background-color: #f8f9ff; border-left: 4px solid #667eea; padding: 20px; margin: 25px 0; border-radius: 0 8px 8px 0;">
+                    <h3 style="margin: 0 0 15px 0; color: #2c3e50; font-size: 18px;">What you can expect:</h3>
+                    <ul style="margin: 0; padding-left: 20px; color: #555;">
+                        <li style="margin-bottom: 8px;"> Access to annotation projects and tasks</li>
+                        <li style="margin-bottom: 8px;"> Collaborative labeling environment</li>
+                        <li style="margin-bottom: 8px;"> User-friendly interface for data annotation</li>
+                        <li> Contribute to cutting-edge machine learning projects</li>
+                    </ul>
+                </div>
+                
+                <!-- CTA Button -->
+                <div style="text-align: center; margin: 35px 0;">
+                    <a href="{full_invite_url}"
+                        style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #ffffff; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4); transition: all 0.3s ease;">
+                        Accept Invitation
+                    </a>
+                </div>
+                
+                <div style="margin: 30px 0; padding: 20px; background-color: #f8f9fa; border-radius: 8px; border: 1px solid #e9ecef;">
+                    <p style="margin: 0 0 10px 0; font-size: 14px; color: #6c757d; font-weight: 600;">Alternative access:</p>
+                    <p style="margin: 0; font-size: 14px; color: #495057; word-break: break-all;">
+                        Copy and paste this link: <span style="color: #667eea;">{full_invite_url}</span>
+                    </p>
+                </div>
+                
+                <p style="margin: 25px 0 0 0; font-size: 16px; color: #555;">
+                    If you have any questions, feel free to reach out to the organization administrator.
+                </p>
+                
+                <p style="margin: 20px 0 0 0; font-size: 16px; color: #555;">
+                    Best regards,<br>
+                    <strong style="color: #2c3e50;">The Rio Studio Team</strong>
+                </p>
+            </div>
+            
+            <!-- Footer -->
+            <div style="background-color: #f8f9fa; padding: 25px 30px; border-top: 1px solid #e9ecef;">
+                <p style="margin: 0; font-size: 12px; color: #6c757d; line-height: 1.5;">
+                    <strong>Organization:</strong> {active_org.title}<br>
+                    <strong>Role:</strong> {role.title()}<br><br>
+                    This invitation was sent by {active_org.title}. If you weren't expecting this invitation, you can safely ignore this email.
+                </p>
+            </div>
+            
+            <!-- Bottom spacing -->
+            <div style="height: 20px; background-color: #f4f4f4;"></div>
+        </div>
+    </body>
+    </html>
+    """
