@@ -30,3 +30,4 @@ alert(resultOLD);
 // new way of string concatenation using template literals
 let result = `${fname} ${lname} is actually ${realage} years old today.`;
 alert(result);
+
