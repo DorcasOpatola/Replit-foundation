@@ -56,18 +56,18 @@ function greeting(message){
 // The 'function' keyword is not needed, but is replaced by 'let'.
 // If only one arguement is passed, the parenthesis is not needed, only needed when more than one parenthesis is passed.
 // If you are returning only one statement, then, the "return" keyword is not needed.
-
 let greet = (message) => alert(`${message} Ashley!`);
 
-let workday = (user, days, months) => alert(`Hello ${user}, you have now worked a total of ${days * months} in this organization.`);
+let workday = (user, days, months) => alert(`Hello ${user}, you have now worked a total of ${days * months} days in this organization.`);
 
 let worky = (days, weeks, month) => {
     if (days, weeks, month){
         year = days * weeks * month
     }
-    return alert(year);
+    return alert(`There are ${year} working days in a year.`);
 }
 
+// This function takes multiple argument
 let createBlog = (title, body) => {
     if (!title){
         throw new Error("A title is required!");
@@ -78,11 +78,15 @@ let createBlog = (title, body) => {
     return alert(`${title} - ${body}`);
 }
 
+// This function takes no input
+let hello = () => ("Hello everyone");
+
 greeting("It's dinner time");
 greet("Get out now");
 worky(5, 52, 12);
 workday("Bola", 5,8);
 createBlog(44,"Today is Monday!");
+hello();
 
 
 
