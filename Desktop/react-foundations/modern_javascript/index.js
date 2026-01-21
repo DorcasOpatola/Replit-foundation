@@ -16,8 +16,9 @@ if (true){
 alert(lname);
 alert(fname); 
 
-*/
 
+
+// TEMPLATE STRINGS
 let fname = "Amaka";
 let lname = "Goodness";
 let age = prompt("Guess Amaka's age...");
@@ -30,4 +31,58 @@ alert(resultOLD);
 // new way of string concatenation using template literals
 let result = `${fname} ${lname} is actually ${realage} years old today.`;
 alert(result);
+
+
+
+
+// DEFAULT PARAMETERS
+function welcome(user='Mystery person', message='goodday'){
+    alert(`Hello ${user}, ${message}!`)
+}
+
+welcome();
+welcome("Ade", "I am delighted to see you");
+*/
+
+
+
+
+// ARROW FUNCTIONS
+function greeting(message){
+    return alert(`${message} everyone!`)
+}
+
+// Arrow functions are used as a shorthand for function definition
+// The 'function' keyword is not needed, but is replaced by 'let'.
+// If only one arguement is passed, the parenthesis is not needed, only needed when more than one parenthesis is passed.
+// If you are returning only one statement, then, the "return" keyword is not needed.
+
+let greet = (message) => alert(`${message} Ashley!`);
+
+let workday = (user, days, months) => alert(`Hello ${user}, you have now worked a total of ${days * months} in this organization.`);
+
+let worky = (days, weeks, month) => {
+    if (days, weeks, month){
+        year = days * weeks * month
+    }
+    return alert(year);
+}
+
+let createBlog = (title, body) => {
+    if (!title){
+        throw new Error("A title is required!");
+    }
+    if (!body){
+        throw new Error("Body can't be empty!");
+    }
+    return alert(`${title} - ${body}`);
+}
+
+greeting("It's dinner time");
+greet("Get out now");
+worky(5, 52, 12);
+workday("Bola", 5,8);
+createBlog(44,"Today is Monday!");
+
+
 
