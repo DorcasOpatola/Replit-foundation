@@ -48,6 +48,7 @@ welcome("Ade", "I am delighted to see you");
 
 
 // ARROW FUNCTIONS
+// Methods
 function greeting(message){
     return alert(`${message} everyone!`)
 }
@@ -79,7 +80,7 @@ let createBlog = (title, body) => {
 }
 
 // This function takes no input
-let hello = () => ("Hello everyone");
+let hello = () => alert("Hello everyone");
 
 greeting("It's dinner time");
 greet("Get out now");
@@ -90,3 +91,20 @@ hello();
 
 
 
+// ARROW FUNCTION & 'THIS' KEYWORD
+function sayhi(){
+}
+
+console.log(this);
+
+// an array of objects to test out 'this' keyword
+let naija = {
+    mountains: ["Zuma", "Olumo", "Ajaokuta"],
+    // add method
+    printWithDash: function(){
+        setTimeout(() => console.log(this.mountains.join(" - ")), 3000);
+    }
+};
+
+alert(naija.mountains);
+naija.printWithDash();
